@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilosEncuesta.css">
+  <link rel="icon" type="image/x-icon" href="favicon/faviconEncuesta.ico" />
+  <title>Formulario Interactivo</title>
+</head>
+<body>
+  <form id="Formulario">
+    <h1 class="titulo">Formulario Interactivo con JavaScript</h1>
+    <div class="formularios-grupos">
+      <label><b>Nombre</b></label>
+      <input type="text" name="label-nombre" id="Nombre" maxlength="20" placeholder="Ingrese su Nombre...">
+    </div>
+    <div id="NombreError" class="Error"></div>
+    <div class="formularios-grupos">
+      <label><b>Apellido</b></label>
+      <input type="text" name="label-Apellido" id="Apellido" maxlength="20" placeholder="Ingrese su Apellido..." >
+    </div>
+    <div id="ApellidoError" class="Error"></div>
+    <div class="formularios-grupos">
+      <label><b>Email</b></label>
+      <input type="email" name="label-Email" id="Email" maxlength="40" placeholder="Ingrese su Email..."  >
+    </div>
+    <div id="EmailError" class="Error"></div>
+    <div class="formularios-grupos">
+      <label><b>Contraseña</b></label>
+      <input type="password" name="label-Contraseña" id="Contraseña" placeholder="Ingrese su Contraseña..."  min="15" maxlength="40">
+    </div>
+    <div id="ContraseñaError" class="Error"></div>
+    <div class="boton">
+      <input type="submit" class="submit-btn">
+    </div>
+  </form>
+  <script src="JavaScript/validacion.js"></script>
+</body>
+</html>
